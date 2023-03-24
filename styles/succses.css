@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url('../imgs/section4.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    color: #FFF;
+}
+
+.data__contain{
+    margin-top: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.data__contain p{
+    color: #FFF;
+}
+.data__contain b{
+    color: green;
+}
+.data__chunks{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}

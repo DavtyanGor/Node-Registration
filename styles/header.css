@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48px;
+    position: relative;
+}
+
+/* .header__logo {
+} */
+.header__logo h1{
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* .header__nav {} */
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.header__list li {
+    list-style: none;
+}
+
+.header__list li a {
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.header__list li a::before {
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    background-color: #3DB12F;
+    height: 3px;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+}
+
+.header__list li a:hover::before {
+    width: 100%;
+}
+
+.burger {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+.lines {
+    position: absolute;
+    width: 100%;
+    height: 3.5px;
+    border-radius: 5px;
+    background-color: #3DB12F;
+    transition: .4s ease-in-out;
+}
+
+.line1 {
+    top: 0;
+}
+
+.line2 {
+    top: 50%;
+}
+
+.line3 {
+    top: 100%;
+}
+
+.active .line1 {
+    transform: rotate(45deg);
+    top: 15px;
+}
+
+.active .line2 {
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+.active .line3 {
+    transform: rotate(-45deg);
+    top: 15px;
+}
+
+.modal {
+    width: 533px;
+    height: 496px;
+    background: #1C2125;
+    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    font-family: 'Segoe UI';
+    top: -2000%;
+    transition: .4s ease-in-out;
+    z-index: 3;
+}
+
+.modal h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.modal input:not(#check) {
+    width: 282px;
+    height: 46px;
+    background: #2B3135;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 19px;
+    padding-left: 20.5px;
+    color: #FFF;
+}
+
+#login {
+    margin-top: 36px;
+}
+
+#check {
+    position: relative;
+    margin: 27px 0;
+    width: 14px;
+    height: 14px;
+    accent-color: #2B3135;
+    border: 1px dashed #2B3135;
+    background-color: red !important;
+    z-index: 1;
+}
+#check::after{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #2B3135;
+    content: var(--cont);
+    color: red;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #648E00 0%, #005100 100%);
+    border-radius: 30px;
+    width: 282px;
+    height: 46px;
+    border: none;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.modal input::placeholder {
+    color: #5F6368;
+}
+
+.modal a {
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: #5F6368;
+    transition: .2s ease-in-out;
+    text-decoration: underline;
+}
+
+.modal a > span{
+    color: #3DB12F;
+    text-decoration: underline;
+}
+
+.modal a:hover {
+    color: #FFF;
+}
+
+.check__contain {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-right: 140px;
+}
+
+.check__contain label {
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: #5F6368;
+}
+
+.fot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1.2px solid #C4C4C4;
+    padding-bottom: 84px;
+    background: url("../imgs/section4.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.fot>div {
+    margin-top: 78px;
+    font-family: 'Segoe UI';
+}
+
+.fot__logo {
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.fot__policy {
+    font-size: 20px;
+    color: #3DB12F;
+    margin-top: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.secf1 {
+    width: 364px;
+}
+
+.secf2 {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    gap: 5;
+}
+
+.secf2 p {
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.secf3 {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.secf3 p {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.fmodal{
+    color: #FFF;
+    width: 533px;
+    height: 496px;
+    background: #1C2125;
+    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    font-family: 'Segoe UI';
+    left: -2000%;
+    top: 400px;
+    transition: .4s ease-in-out;
+    text-align: center;
+    gap: 15px;
+}
+@media screen and (max-width: 992px) {
+    .header__list {
+        display: flex;
+        position: absolute;
+        right: -100%;
+        transition: .4s ease-in-out;
+        flex-direction: column;
+        width: 300px;
+        justify-content: center;
+        align-items: flex-start;
+        height: 350px;
+        background-color: #141414;
+        top: -50px;
+        z-index: 1;
+    }
+
+    .active-nav.header__list {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: center;
+        align-items: flex-start;
+        height: 350px;
+        background-color: #141414;
+        right: 0%;
+        top: -50px;
+        position: absolute;
+        padding-left: 30px;
+        transition: .6s ease-in-out;
+        z-index: 1;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header__logo {
+        margin-right: 200px;
+    }
+
+    .header__list li a::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -15px;
+        background-color: #aaa;
+        width: 250px;
+        height: 2px;
+    }
+}
+@media  screen and (max-width: 850px) {
+    .fot{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media  screen and (max-width: 580px) {
+    .fmodal{
+        width: 353px;
+        height: 316px;
+    }
+}

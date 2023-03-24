@@ -1,0 +1,220 @@
+body {
+    background: url("../imgs/section1.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2px;
+    flex-wrap: wrap;
+}
+
+.sec1__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sec1__left h2 {
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    font-size: 64px;
+    color: #3DB12F;
+}
+
+.sec1__left p {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 538.12px;
+    margin-top: 20px;
+}
+
+.sec1__brands {
+    display: flex;
+    gap: 28px;
+    margin-top: 13px;
+}
+
+.sec1__img-ios,
+.sec1__img-apk {
+    Width: 163.37px;
+    Height: 47.23px;
+}
+
+.sec1__right {
+    height: 506px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.sec1__right img,
+.sec1__img-ios img,
+.sec1__img-apk img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec2 {
+    height: 470px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+.sec2 h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #3DB12F;
+    margin-bottom: 80px;
+}
+
+.sec2 p {
+    font-size: 20px;
+    color: #192C33;
+    width: 830px;
+}
+
+.sec2 p:last-child {
+    margin-top: 70px;
+}
+
+.sec3 {
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3__img {
+    width: 1200px;
+    height: 900px;
+}
+
+.sec3__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sec4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI';
+    background: url('../imgs/section4.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 77px;
+}
+
+.sec4 h2 {
+    margin-top: 88px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #3DB12F;
+}
+
+.sec4__squares {
+    font-weight: 700;
+    font-size: 32px;
+    color: #3DB12F;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 900px;
+    margin-top: 69px;
+}
+
+.sec4__squares-sqrt {
+    width: 261.93px;
+    height: 184.47px;
+    background: #3DB12F;
+    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4__squares-sqrt p {
+    font-size: 20px;
+    text-align: center;
+    width: 235.82px;
+    color: #FFFFFF;
+}
+
+@media  screen and (max-width: 1138px) {
+    .sec1{
+        gap: 30px;
+    }
+    .sec1__left{
+        align-items: center;
+        padding: 0 10px;
+    }
+    .sec1__left p{
+        text-align: center;
+    }
+}
+@media  screen and (max-width: 925px) {
+    .sec4__squares{
+        width: 100%;
+    }
+    .sec4 h2{
+        text-align: center;
+    }
+}
+@media  screen and (max-width: 850px) {
+    .sec2 p{
+        width: 100vw;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 650px){
+    .sec3{
+        height: 700px;
+    }
+}
+@media screen and (max-width: 550px){
+    .sec1__right{
+        display: none;
+    }
+    .sec1{
+        margin-bottom: 100px;
+    }
+    .sec1__left p{
+        width: 100vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sec1__left h2{
+        font-size: 45px;
+    }
+    .sec3{
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .sec1__img-apk, .sec1__img-ios{
+        width: 150px;
+    }
+    .sec2{
+        height: 600px;
+    }
+    .sec3{
+        height: 500px;
+    }
+}

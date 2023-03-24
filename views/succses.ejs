@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you for registration</title>
+    <link rel="stylesheet" href="../styles/succses.css" type="text/css">
+</head>
+
+<body>
+    <h2>Спасибо за регистрацию!</h2>
+    <h2>Вот ваши данные</h2>
+    <div class="data__contain">
+        <div class="data__chunks">
+            <b>Login:</b>
+            <p><%= data.name %></p>
+        </div>
+        <div class="data__chunks">
+            <b>Email:</b>
+            <p><%= data.email %></p>
+        </div>
+        <div class="data__chunks">
+            <b>Passw:</b>
+           <p><%= data.pass %></p>
+        </div>
+    </div>
+    <h4><a href="/">Вернутся назад</a></h4>
+</body>
+
+</html>

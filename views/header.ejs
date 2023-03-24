@@ -1,0 +1,33 @@
+    <header class="header">
+        <div class="header__logo">
+            <h1 class="header__logo-h1">Tap Table</h1>
+        </div>
+        <div class="burger">
+            <span class="lines line1"></span>
+            <span class="lines line2"></span>
+            <span class="lines line3"></span>
+        </div>
+            <form class='modal' method="post" action="/succses">
+            <h2>Регистрация</h2>
+                <input type="text" name="name" id="login" placeholder="Имя" minlength="3">
+                <span id="logCheck"></span>
+                <input type="email" name="email" id="email" placeholder="Email" >
+                <span id="emailCheck"></span>
+                <input type="password" name="pass" id="pass" placeholder="Пароль">
+                <input type="password" name="repass" id="repass" placeholder="Потвердить пароль">
+                <span id="passCheck"></span>
+                <div class="check__contain">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Запомнить</label>
+                </div>
+                <button class="btn">Зарегистрироватся</button>
+                <a href="#">Зарегистрированы? <span>Войти</span></a>
+            </form>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="#" class="list-item1">О компании</a></li>
+                <li><a href="#" class="list-item2">Условия сотрудничества</a></li>
+                <li><a href="#" class="reg">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
